@@ -3,7 +3,7 @@ using std::cerr;
 using std::cout;
 using std::endl;
 
-#include "ToDo.h"
+#include "ToDoCore/ToDo.h"
 
 #define EXPECT_EQUAL(test,expect) equalityTest(test, expect, #test, #expect, __FILE__, __LINE__)
 
