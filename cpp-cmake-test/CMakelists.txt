@@ -3,7 +3,10 @@ cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 
 project("To Do List")
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
+
 enable_testing()
+include(gmock)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR
     "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
