@@ -1,0 +1,1 @@
+add_library(librandomnumgen random_number_generator.cpp)
