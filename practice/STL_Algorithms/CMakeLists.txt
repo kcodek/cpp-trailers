@@ -1,0 +1,1 @@
+add_library(STL_Algorithms search.cpp)

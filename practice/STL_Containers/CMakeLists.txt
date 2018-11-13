@@ -1,0 +1,1 @@
+add_library(STL_Containters list_1.cpp set_1.cpp vector_1.cpp vector_2.cpp)

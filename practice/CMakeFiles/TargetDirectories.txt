@@ -1,0 +1,8 @@
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/CMakeFiles/test.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/CMakeFiles/rebuild_cache.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/CMakeFiles/edit_cache.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/CMakeFiles/practice.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/STL/CMakeFiles/rebuild_cache.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/STL/CMakeFiles/edit_cache.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/STL/CMakeFiles/test.dir
+/Users/kishored/Documents/coding/cpp-coding/cpp-practice/STL/CMakeFiles/STL.dir
