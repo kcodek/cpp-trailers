@@ -1,7 +1,19 @@
+#ifndef IOSTREAM
+#define IOSTREAM
+#include<iostream>
+#endif
 
-#include <iostream>
-#include <vector>
+#ifndef LIST
+#define LIST
 #include <list>
+#endif
+
+#ifndef VECTOR
+#define VECTOR
+#include<vector>
+#endif
+
+
 //****************************************************************************
 //http://thispointer.com/stdvector-and-iterator-invalidation/
 int main_iterator_invalidation()
@@ -76,7 +88,7 @@ public:
 	NewSample(const NewSample & obj)
 	{}
 	NewSample & operator=(const NewSample & obj)
-	{}
+	{} //-W: reaches end of non-void function
 };
 
 int main_Vector_UserDefinedObj()
@@ -194,7 +206,8 @@ void example4() {
 
 }
 
-int main_initializingVector() {
+int main_initializingVector() 
+{
 
 	example1();
 	example2();

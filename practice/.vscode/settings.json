@@ -12,6 +12,8 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "algorithm": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "map": "cpp",
+        "utility": "cpp"
     }
 }

@@ -1,6 +1,12 @@
+#ifndef IOSTREAM
+#define IOSTREAM
+#include<iostream>
+#endif
 
-#include <iostream>
+#ifndef SET
+#define SET
 #include<set>
+#endif
 
 //******************************************************************************
 //http://thispointer.com/using-stdset-with-user-defined-classes/
@@ -109,8 +115,8 @@ void checkAndInsert(int num)
 		std::cout << "Number " << num << " was already present in set\n";
 }
 
-int main_set_thispointer()
-// int main()
+int main()
+// int main_set_thispointer()
 {
 	checkAndInsert(2);
 	checkAndInsert(3);

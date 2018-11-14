@@ -10,6 +10,20 @@ insertion into containers - multiple ways
 - set:
     - change the default sorting, compartor
 
+- map
+
+
+- deque
+
+- vector
+    - storing custom datatype 
+    - storing pointers
+    - deleting elements
+    
+- rope 
+
+- 
+
 
 
 #### Strings

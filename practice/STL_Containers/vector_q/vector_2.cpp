@@ -126,7 +126,6 @@ struct RandomGenerator {
 };
 
 int main_randomNumbers() 
-// int main()
 {
 	// Initialize a vector with 10 ints of value 0
 	std::vector<int> vecOfRandomNums(10);
@@ -186,7 +185,6 @@ void displayVector(std::vector<int> & vec)
 }
 
 int main_erase_remove_idiom()
-// int main()
 {
 	int arr[10] = { 1,2,5,4,5,1,5,7,8,9 };
 

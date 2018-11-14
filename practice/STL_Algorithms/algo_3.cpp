@@ -314,8 +314,7 @@ bool IsLesser10(int i) {
 	return (i < 10);
 }
 
-//int main_find_if()
-int main()
+int main_find_if()
 {
 
 	std::vector<int> vecData{ 1,2,3,4,5 };

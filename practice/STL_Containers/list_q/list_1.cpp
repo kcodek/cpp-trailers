@@ -1,5 +1,12 @@
-#include <iostream>
+#ifndef IOSTREAM
+#define IOSTREAM
+#include<iostream>
+#endif
+
+#ifndef LIST
+#define LIST
 #include <list>
+#endif
 
 
 //ToDo
@@ -13,7 +20,6 @@ http://thispointer.com/how-to-remove-elements-from-a-list-based-on-value/
 
 
 //http://thispointer.com/stdlist-tutorial-and-usage-details/
-// int main()
 int main_list_thispointer()
 {
 	std::list<int> listOfNumbers;
@@ -25,7 +31,7 @@ int main_list_thispointer()
 	//Inserting elements at front in list
 	listOfNumbers.push_front(2);
 	listOfNumbers.push_front(1);
-
+	std::cout<<"list of Numbers:"<<std::endl;
 	// Iterating over list elements and display them
 	std::list<int>::iterator it = listOfNumbers.begin();
 	while (it != listOfNumbers.end())
