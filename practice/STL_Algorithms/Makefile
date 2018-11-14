@@ -91,14 +91,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Algorithms/CMakeFiles/progress.marks
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Algorithms/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Algorithms/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,84 +108,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Algorithms/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Algorithms/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named practice
+# Convenience name for target.
+STL_Algorithms/CMakeFiles/STL_Algorithms.dir/rule:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Algorithms/CMakeFiles/STL_Algorithms.dir/rule
+.PHONY : STL_Algorithms/CMakeFiles/STL_Algorithms.dir/rule
 
-# Build rule for target.
-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 practice
-.PHONY : practice
+# Convenience name for target.
+STL_Algorithms: STL_Algorithms/CMakeFiles/STL_Algorithms.dir/rule
 
-# fast build rule for target.
-practice/fast:
-	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
-.PHONY : practice/fast
-
-#=============================================================================
-# Target rules for targets named STL_Containters
-
-# Build rule for target.
-STL_Containters: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 STL_Containters
-.PHONY : STL_Containters
-
-# fast build rule for target.
-STL_Containters/fast:
-	$(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/build
-.PHONY : STL_Containters/fast
-
-#=============================================================================
-# Target rules for targets named STL_Algorithms
-
-# Build rule for target.
-STL_Algorithms: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 STL_Algorithms
 .PHONY : STL_Algorithms
 
 # fast build rule for target.
 STL_Algorithms/fast:
-	$(MAKE) -f STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build.make STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build.make STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build
 .PHONY : STL_Algorithms/fast
 
-main.o: main.cpp.o
+search.o: search.cpp.o
 
-.PHONY : main.o
+.PHONY : search.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.o
-.PHONY : main.cpp.o
+search.cpp.o:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build.make STL_Algorithms/CMakeFiles/STL_Algorithms.dir/search.cpp.o
+.PHONY : search.cpp.o
 
-main.i: main.cpp.i
+search.i: search.cpp.i
 
-.PHONY : main.i
+.PHONY : search.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.i
-.PHONY : main.cpp.i
+search.cpp.i:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build.make STL_Algorithms/CMakeFiles/STL_Algorithms.dir/search.cpp.i
+.PHONY : search.cpp.i
 
-main.s: main.cpp.s
+search.s: search.cpp.s
 
-.PHONY : main.s
+.PHONY : search.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.cpp.s
-.PHONY : main.cpp.s
+search.cpp.s:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Algorithms/CMakeFiles/STL_Algorithms.dir/build.make STL_Algorithms/CMakeFiles/STL_Algorithms.dir/search.cpp.s
+.PHONY : search.cpp.s
 
 # Help Target
 help:
@@ -196,12 +172,10 @@ help:
 	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... practice"
-	@echo "... STL_Containters"
 	@echo "... STL_Algorithms"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... search.o"
+	@echo "... search.i"
+	@echo "... search.s"
 .PHONY : help
 
 
@@ -213,6 +187,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

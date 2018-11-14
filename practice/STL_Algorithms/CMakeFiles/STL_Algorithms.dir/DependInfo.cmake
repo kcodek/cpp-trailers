@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/main.cpp" "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles/practice.dir/main.cpp.o"
+  "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Algorithms/search.cpp" "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Algorithms/CMakeFiles/STL_Algorithms.dir/search.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -15,8 +15,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Containers/CMakeFiles/STL_Containters.dir/DependInfo.cmake"
-  "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Algorithms/CMakeFiles/STL_Algorithms.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

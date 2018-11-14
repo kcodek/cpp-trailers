@@ -48,13 +48,24 @@ RM = /usr/local/Cellar/cmake/3.11.4/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kishored/Documents/coding/cpp-coding/cpp-practice
+CMAKE_SOURCE_DIR = /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kishored/Documents/coding/cpp-coding/cpp-practice
+CMAKE_BINARY_DIR = /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/Cellar/cmake/3.11.4/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,27 +89,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.11.4/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-practice/CMakeFiles /Users/kishored/Documents/coding/cpp-coding/cpp-practice/STL/CMakeFiles/progress.marks
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f CMakeFiles/Makefile2 STL/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-practice/CMakeFiles 0
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Containers/CMakeFiles/progress.marks
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Containers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f CMakeFiles/Makefile2 STL/clean
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Containers/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,60 +108,141 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f CMakeFiles/Makefile2 STL/preinstall
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Containers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f CMakeFiles/Makefile2 STL/preinstall
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Containers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-STL/CMakeFiles/STL.dir/rule:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f CMakeFiles/Makefile2 STL/CMakeFiles/STL.dir/rule
-.PHONY : STL/CMakeFiles/STL.dir/rule
+STL_Containers/CMakeFiles/STL_Containters.dir/rule:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f CMakeFiles/Makefile2 STL_Containers/CMakeFiles/STL_Containters.dir/rule
+.PHONY : STL_Containers/CMakeFiles/STL_Containters.dir/rule
 
 # Convenience name for target.
-STL: STL/CMakeFiles/STL.dir/rule
+STL_Containters: STL_Containers/CMakeFiles/STL_Containters.dir/rule
 
-.PHONY : STL
+.PHONY : STL_Containters
 
 # fast build rule for target.
-STL/fast:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f STL/CMakeFiles/STL.dir/build.make STL/CMakeFiles/STL.dir/build
-.PHONY : STL/fast
+STL_Containters/fast:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/build
+.PHONY : STL_Containters/fast
 
-list_q.o: list_q.cpp.o
+list_1.o: list_1.cpp.o
 
-.PHONY : list_q.o
+.PHONY : list_1.o
 
 # target to build an object file
-list_q.cpp.o:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f STL/CMakeFiles/STL.dir/build.make STL/CMakeFiles/STL.dir/list_q.cpp.o
-.PHONY : list_q.cpp.o
+list_1.cpp.o:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/list_1.cpp.o
+.PHONY : list_1.cpp.o
 
-list_q.i: list_q.cpp.i
+list_1.i: list_1.cpp.i
 
-.PHONY : list_q.i
+.PHONY : list_1.i
 
 # target to preprocess a source file
-list_q.cpp.i:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f STL/CMakeFiles/STL.dir/build.make STL/CMakeFiles/STL.dir/list_q.cpp.i
-.PHONY : list_q.cpp.i
+list_1.cpp.i:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/list_1.cpp.i
+.PHONY : list_1.cpp.i
 
-list_q.s: list_q.cpp.s
+list_1.s: list_1.cpp.s
 
-.PHONY : list_q.s
+.PHONY : list_1.s
 
 # target to generate assembly for a file
-list_q.cpp.s:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(MAKE) -f STL/CMakeFiles/STL.dir/build.make STL/CMakeFiles/STL.dir/list_q.cpp.s
-.PHONY : list_q.cpp.s
+list_1.cpp.s:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/list_1.cpp.s
+.PHONY : list_1.cpp.s
+
+set_1.o: set_1.cpp.o
+
+.PHONY : set_1.o
+
+# target to build an object file
+set_1.cpp.o:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/set_1.cpp.o
+.PHONY : set_1.cpp.o
+
+set_1.i: set_1.cpp.i
+
+.PHONY : set_1.i
+
+# target to preprocess a source file
+set_1.cpp.i:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/set_1.cpp.i
+.PHONY : set_1.cpp.i
+
+set_1.s: set_1.cpp.s
+
+.PHONY : set_1.s
+
+# target to generate assembly for a file
+set_1.cpp.s:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/set_1.cpp.s
+.PHONY : set_1.cpp.s
+
+vector_1.o: vector_1.cpp.o
+
+.PHONY : vector_1.o
+
+# target to build an object file
+vector_1.cpp.o:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/vector_1.cpp.o
+.PHONY : vector_1.cpp.o
+
+vector_1.i: vector_1.cpp.i
+
+.PHONY : vector_1.i
+
+# target to preprocess a source file
+vector_1.cpp.i:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/vector_1.cpp.i
+.PHONY : vector_1.cpp.i
+
+vector_1.s: vector_1.cpp.s
+
+.PHONY : vector_1.s
+
+# target to generate assembly for a file
+vector_1.cpp.s:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/vector_1.cpp.s
+.PHONY : vector_1.cpp.s
+
+vector_2.o: vector_2.cpp.o
+
+.PHONY : vector_2.o
+
+# target to build an object file
+vector_2.cpp.o:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/vector_2.cpp.o
+.PHONY : vector_2.cpp.o
+
+vector_2.i: vector_2.cpp.i
+
+.PHONY : vector_2.i
+
+# target to preprocess a source file
+vector_2.cpp.i:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/vector_2.cpp.i
+.PHONY : vector_2.cpp.i
+
+vector_2.s: vector_2.cpp.s
+
+.PHONY : vector_2.s
+
+# target to generate assembly for a file
+vector_2.cpp.s:
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(MAKE) -f STL_Containers/CMakeFiles/STL_Containters.dir/build.make STL_Containers/CMakeFiles/STL_Containters.dir/vector_2.cpp.s
+.PHONY : vector_2.cpp.s
 
 # Help Target
 help:
@@ -169,13 +250,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... STL"
-	@echo "... list_q.o"
-	@echo "... list_q.i"
-	@echo "... list_q.s"
+	@echo "... STL_Containters"
+	@echo "... list_1.o"
+	@echo "... list_1.i"
+	@echo "... list_1.s"
+	@echo "... set_1.o"
+	@echo "... set_1.i"
+	@echo "... set_1.s"
+	@echo "... vector_1.o"
+	@echo "... vector_1.i"
+	@echo "... vector_1.s"
+	@echo "... vector_2.o"
+	@echo "... vector_2.i"
+	@echo "... vector_2.s"
 .PHONY : help
 
 
@@ -187,6 +277,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/kishored/Documents/coding/cpp-coding/cpp-practice && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

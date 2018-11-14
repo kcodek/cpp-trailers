@@ -34,3 +34,6 @@
 # Build & Bin directories
 build/
 bin/
+
+
+.DS_Store

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice
+# Install script for directory: /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Algorithms
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,20 +32,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Containers/cmake_install.cmake")
-  include("/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Algorithms/cmake_install.cmake")
-
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

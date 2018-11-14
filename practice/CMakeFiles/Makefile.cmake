@@ -13,7 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
   "CMakeLists.txt"
-  "STL/CMakeLists.txt"
+  "STL_Algorithms/CMakeLists.txt"
+  "STL_Containers/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CMakeCCompilerABI.c"
   "/usr/local/Cellar/cmake/3.11.4/share/cmake/Modules/CMakeCInformation.cmake"
@@ -116,11 +117,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.11.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.11.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "STL/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "STL_Containers/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "STL_Algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practice.dir/DependInfo.cmake"
-  "STL/CMakeFiles/STL.dir/DependInfo.cmake"
+  "STL_Containers/CMakeFiles/STL_Containters.dir/DependInfo.cmake"
+  "STL_Algorithms/CMakeFiles/STL_Algorithms.dir/DependInfo.cmake"
   )

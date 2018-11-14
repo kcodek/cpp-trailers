@@ -25,6 +25,8 @@ insertion into containers - multiple ways
 #### Parsing - JSON, XML, text, csv
 
 
+#### Smart pointers
+
 ##### general questions
 //Syllabus - Apr 27th, 2016 
 

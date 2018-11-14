@@ -125,8 +125,8 @@ struct RandomGenerator {
 	}
 };
 
-// int main_randomNumbers() 
-int main()
+int main_randomNumbers() 
+// int main()
 {
 	// Initialize a vector with 10 ints of value 0
 	std::vector<int> vecOfRandomNums(10);

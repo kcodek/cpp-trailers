@@ -1,4 +1,4 @@
-# Install script for directory: /Users/kishored/Documents/coding/cpp-coding/cpp-practice/STL
+# Install script for directory: /Users/kishored/Documents/coding/cpp-coding/cpp-trailers/practice/STL_Containers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
