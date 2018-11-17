@@ -1,1 +1,1 @@
-add_library(STL_Algorithms algo_1.cpp algo_2.cpp algo_3.cpp) 
+add_library(STL_Algorithms algo_1.cpp algo_2.cpp algo_3.cpp algo_4) 

@@ -115,8 +115,8 @@ void checkAndInsert(int num)
 		std::cout << "Number " << num << " was already present in set\n";
 }
 
-int main()
-// int main_set_thispointer()
+
+int main_set_thispointer()
 {
 	checkAndInsert(2);
 	checkAndInsert(3);

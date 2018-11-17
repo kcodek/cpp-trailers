@@ -32,7 +32,6 @@ insertion into containers - multiple ways
 #### Streams
 
 
-
 #### File Handling
 
 
@@ -40,6 +39,15 @@ insertion into containers - multiple ways
 
 
 #### Smart pointers
+
+
+#### Error Handling & Exceptions
+
+
+#### Concurrency
+
+
+
 
 ##### general questions
 //Syllabus - Apr 27th, 2016 

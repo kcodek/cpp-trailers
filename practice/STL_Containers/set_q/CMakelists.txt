@@ -1,1 +1,1 @@
-add_library(set_q set_1.cpp)
+add_library(set_q set_1.cpp set_2.cpp set_3.cpp)

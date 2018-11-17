@@ -1,1 +1,1 @@
-add_library(list_q list_1.cpp)
+add_library(list_q list_1.cpp list_2.cpp)
