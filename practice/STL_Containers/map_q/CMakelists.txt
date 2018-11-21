@@ -1,1 +1,0 @@
-add_library(map_q map_1.cpp map_3.cpp)

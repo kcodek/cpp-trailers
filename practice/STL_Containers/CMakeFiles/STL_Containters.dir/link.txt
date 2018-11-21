@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libSTL_Containters.a  CMakeFiles/STL_Containters.dir/list_1.cpp.o CMakeFiles/STL_Containters.dir/set_1.cpp.o CMakeFiles/STL_Containters.dir/vector_1.cpp.o CMakeFiles/STL_Containters.dir/vector_2.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libSTL_Containters.a

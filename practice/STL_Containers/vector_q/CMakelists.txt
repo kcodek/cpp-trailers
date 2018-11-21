@@ -1,1 +1,0 @@
-add_library(vector_q vector_1.cpp vector_2.cpp vector_3.cpp)
