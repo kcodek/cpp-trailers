@@ -1,5 +1,19 @@
-# Prerequisites
+# Prerequisites for CMAKE
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Prerequisites for cpp
 *.d
+
+.vscode/
+build/
 
 # Compiled Object files
 *.slo

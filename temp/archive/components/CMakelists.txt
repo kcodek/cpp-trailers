@@ -1,0 +1,2 @@
+add_library(user user.cpp)
+add_library(netz netz.cpp)

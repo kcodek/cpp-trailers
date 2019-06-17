@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.6)
+
+project(social)
+
+set(CMAKE_CXX_STANDARD 14)
+
+# tell cmake to output binaries here: 
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib) 
+
+# tell cmake where to look for *.h files 
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+# create library "libtools" 
+add_library(tools src/tools.cpp) 
+
+
+# add executable main
+add_executable(main src/tools_main.cpp)
+
+# tell the linker to bind these objects together 
+# target_link_libraries(main tools)
+
+
+# # For example, given libtools.so it can be  used in the project as follows: 
+# find_library(TOOLS, NAMES tools,  PATHS ${LIBRARY_OUTPUT_PATH})
+#  # Use it for linking: 
+# target_link_libraries(<some_binary> ${TOOLS})

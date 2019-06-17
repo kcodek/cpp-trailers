@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "*.tcfg": "txt",
-        "type_traits": "cpp",
-    },
-    "files.eol": "\r\n"
-}
