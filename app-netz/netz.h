@@ -2,16 +2,23 @@
 #define NETZ
 
 #include "user.h"
-#include<unordered_set>
+#include<unordered_map>
+#include<ctime>
 
+using std::unordered_map;
 
-using std::unordered_set;
+/**
+ * Util Functions
+*/
+
+int GetRandom(int max); // ToDo: use a UUID generator
+
 
 class netz
 {
 private:
     /* data */
-    // unordered_set<user> userCollection;
+    unordered_map<int,user> userCollection;
 
 public:
     netz(/* args */);

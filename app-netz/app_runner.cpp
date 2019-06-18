@@ -3,7 +3,6 @@
 #include "user.h"
 #include "netz.h"
 
-
 using std::cout;
 
 int main()
@@ -13,7 +12,6 @@ int main()
 
 
     cout<<u1;
-
 
     return 0;
 }

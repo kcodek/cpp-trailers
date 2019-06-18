@@ -9,7 +9,8 @@ set( CMAKE_POSITION_INDEPENDENT_CODE ON )
 
 add_executable(Netz)
 target_compile_features(Netz PRIVATE cxx_std_14)
-target_sources(Netz PRIVATE user.cpp  app_runner.cpp)
+# target_sources(Netz PRIVATE user.cpp app_runner.cpp)
+target_sources(Netz PRIVATE user.cpp  netz.cpp app_runner.cpp)
 
 # Create targets for building the (local) libraries
 # add_subdirectory(library)
