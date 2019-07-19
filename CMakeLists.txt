@@ -7,3 +7,4 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 add_subdirectory(app-netz)
 add_subdirectory(cpp-multithread-app)
+add_subdirectory(puzzles)
